@@ -21,7 +21,6 @@ function setup() {
 	ground =new Ground(width/2,690,width,20);
     leftS =new Ground(1400,600,20,120);
 	rightS =new Ground(1200,600,20,120);
-	base = new Ground(1300,800,200,20);
 	side1=new Ground(height/2,10,height,20);
 	side2 =new Ground(height/2,790,height,20);
 	side3=new Ground(width/2,10,width,20);
@@ -54,12 +53,12 @@ function draw() {
   if (keyCode === UP_ARROW){
 	hforce()
 }
-base.visible = false;
+
   ellipse(ball.position.x,ball.position.y,20,20)
   ground.display();
   leftS.display();
   rightS.display();
-   base.display();
+
    side1.display();
    side2.display();
    side3.display();
